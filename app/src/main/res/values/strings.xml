@@ -20,4 +20,10 @@
     <string name="popular_name">Popular</string>
     <string name="settings">Settings</string>
     <string name="sign_in_name">Sign In</string>
+    <string name="btn_now_playing">Now Playing</string>
+    <string name="btn_playlist">Playlist</string>
+    <string name="btn_collection">Collection</string>
+    <string name="collection_description">This activity\'s content depends on the metadata transferred by the parent activity. It usually contains list of particular playlists.</string>
+    <string name="playlist_description">This activity contains the album picture and list of tracks located in the playlist (the album).</string>
+    <string name="now_playing_description">This activity show to user label of the album, the song\'s info and controls</string>
 </resources>
