@@ -8,4 +8,11 @@
     <string name="nav_albums">Albums</string>
     <string name="nav_artists">Artists</string>
     <string name="playlists">Playlists</string>
+    <string name="now_playing_name">Now Playing</string>
+    <string name="playlist_name">Playlist</string>
+    <string name="collection_name">Collection</string>
+    <string name="search_name">Search</string>
+    <string name="popular_name">Popular</string>
+    <string name="settings">Settings</string>
+    <string name="sign_in_name">Sign In</string>
 </resources>
