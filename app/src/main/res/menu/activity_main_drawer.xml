@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recommendations"
+            android:icon="@drawable/ic_surround_sound_black_24dp"
+            android:title="@string/nav_recommendations" />
+        <item
+            android:id="@+id/nav_collections"
+            android:icon="@drawable/ic_web_asset_black_24dp"
+            android:title="@string/nav_collections" />
+        <item
+            android:id="@+id/nav_search"
+            android:icon="@drawable/ic_search_black_24dp"
+            android:title="@string/nav_search" />
+    </group>
+
+    <item android:title="@string/nav_title_my_music">
+        <menu>
+            <item
+                android:id="@+id/nav_tracks"
+                android:icon="@drawable/ic_audiotrack_black_24dp"
+                android:title="@string/nav_tracks" />
+            <item
+                android:id="@+id/nav_albums"
+                android:icon="@drawable/ic_adjust_black_24dp"
+                android:title="@string/nav_albums" />
+            <item
+                android:id="@+id/nav_artists"
+                android:icon="@drawable/ic_recent_actors_black_24dp"
+                android:title="@string/nav_artists" />
+            <item
+                android:id="@+id/nav_playlists"
+                android:icon="@drawable/ic_queue_music_black_24dp"
+                android:title="@string/playlists" />
+        </menu>
+    </item>
+
+</menu>
