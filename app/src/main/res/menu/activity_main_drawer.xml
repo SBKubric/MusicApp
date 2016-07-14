@@ -3,13 +3,9 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_recommendations"
-            android:icon="@drawable/ic_surround_sound_black_24dp"
-            android:title="@string/nav_recommendations" />
-        <item
-            android:id="@+id/nav_collections"
-            android:icon="@drawable/ic_web_asset_black_24dp"
-            android:title="@string/nav_collections" />
+            android:id="@+id/nav_popular"
+            android:icon="@drawable/ic_grade_black_24dp"
+            android:title="@string/nav_popular" />
         <item
             android:id="@+id/nav_search"
             android:icon="@drawable/ic_search_black_24dp"

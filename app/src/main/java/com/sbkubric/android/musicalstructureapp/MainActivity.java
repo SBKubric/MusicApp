@@ -1,9 +1,7 @@
 package com.sbkubric.android.musicalstructureapp;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -71,20 +69,24 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_recommendations) {
-            // Handle the camera action
-        } else if (id == R.id.nav_collections) {
-
+        if (id == R.id.nav_popular) {
+            Intent intent = new Intent(this, PopularActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_search) {
-
+            Intent intent = new Intent(this, SearchActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_tracks) {
-
+            Intent intent = new Intent(this, PlaylistActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_albums) {
-
+            Intent intent = new Intent(this, CollectionActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_artists) {
-
+            Intent intent = new Intent(this, CollectionActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_playlists) {
-
+            Intent intent = new Intent(this, CollectionActivity.class);
+            startActivity(intent);
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

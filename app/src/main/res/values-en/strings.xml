@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="nav_header_main_register">Sign in</string>
-    <string name="nav_recommendations">Recommendations</string>
-    <string name="nav_collections">Collections</string>
+    <string name="nav_popular">Popular</string>
     <string name="nav_search">Search</string>
     <string name="nav_title_my_music">My music</string>
     <string name="nav_tracks">Tracks</string>
