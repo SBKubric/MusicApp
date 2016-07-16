@@ -11,6 +11,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -34,11 +35,11 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         View hview = navigationView.getHeaderView(0);
-        TextView signIn = (TextView) hview.findViewById(R.id.text_nav_header_register);
-        ImageView settingsImg = (ImageView) hview.findViewById(R.id.imageView);
+        Button signIn = (Button) hview.findViewById(R.id.text_nav_header_register);
+        Button settingsImg = (Button) hview.findViewById(R.id.imageView);
         signIn.setOnClickListener(this);
         settingsImg.setOnClickListener(this);
-        
+
         this.setTitle(getString(R.string.popular_name));
     }
 
@@ -108,8 +109,8 @@ public class MainActivity extends AppCompatActivity
     public void onClick(View view) {
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         View hview = navigationView.getHeaderView(0);
-        TextView signIn = (TextView) hview.findViewById(R.id.text_nav_header_register);
-        ImageView settingsImg = (ImageView) hview.findViewById(R.id.imageView);
+        Button signIn = (Button) hview.findViewById(R.id.text_nav_header_register);
+        Button settingsImg = (Button) hview.findViewById(R.id.imageView);
 
         if (view.getId() == signIn.getId()) {
             Intent intent = new Intent(this, SignInActivity.class);
