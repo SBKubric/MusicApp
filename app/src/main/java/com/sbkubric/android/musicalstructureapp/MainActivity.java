@@ -38,6 +38,8 @@ public class MainActivity extends AppCompatActivity
         ImageView settingsImg = (ImageView) hview.findViewById(R.id.imageView);
         signIn.setOnClickListener(this);
         settingsImg.setOnClickListener(this);
+        
+        this.setTitle(getString(R.string.popular_name));
     }
 
     @Override
