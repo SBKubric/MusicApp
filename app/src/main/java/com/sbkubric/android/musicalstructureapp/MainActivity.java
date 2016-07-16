@@ -10,9 +10,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +33,11 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        View hview = navigationView.getHeaderView(0);
+        TextView signIn = (TextView) hview.findViewById(R.id.text_nav_header_register);
+        ImageView settingsImg = (ImageView) hview.findViewById(R.id.imageView);
+        signIn.setOnClickListener(this);
+        settingsImg.setOnClickListener(this);
     }
 
     @Override
@@ -69,7 +78,7 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_popular) {
-            Intent intent = new Intent(this, PopularActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
         } else if (id == R.id.nav_search) {
             Intent intent = new Intent(this, SearchActivity.class);
@@ -91,5 +100,39 @@ public class MainActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onClick(View view) {
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        View hview = navigationView.getHeaderView(0);
+        TextView signIn = (TextView) hview.findViewById(R.id.text_nav_header_register);
+        ImageView settingsImg = (ImageView) hview.findViewById(R.id.imageView);
+
+        if (view.getId() == signIn.getId()) {
+            Intent intent = new Intent(this, SignInActivity.class);
+            startActivity(intent);
+        } else if (view.getId() == settingsImg.getId()) {
+            Intent intent = new Intent(this, SettingsActivity.class);
+            startActivity(intent);
+        } else {
+            switch (view.getId()) {
+                default:
+                    break;
+                case R.id.btn_now_playing:
+                    Intent intentNP = new Intent(this, NowPlayingActivity.class);
+                    startActivity(intentNP);
+                    break;
+                case R.id.btn_playlist:
+                    Intent intentP = new Intent(this, PlaylistActivity.class);
+                    startActivity(intentP);
+                    break;
+                case R.id.btn_collection:
+                    Intent intentC = new Intent(this, CollectionActivity.class);
+                    startActivity(intentC);
+                    break;
+            }
+        }
+
     }
 }
