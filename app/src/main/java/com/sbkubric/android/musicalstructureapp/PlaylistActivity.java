@@ -5,14 +5,18 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 
-public class PlaylistActivity extends AppCompatActivity implements View.OnClickListener{
+public class PlaylistActivity extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_playlist);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        ((Button) findViewById(R.id.btn_now_playing)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btn_playlist)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btn_collection)).setOnClickListener(this);
     }
 
     @Override

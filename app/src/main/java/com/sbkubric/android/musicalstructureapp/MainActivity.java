@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity
         Button settingsImg = (Button) hview.findViewById(R.id.imageView);
         signIn.setOnClickListener(this);
         settingsImg.setOnClickListener(this);
+        ((Button) findViewById(R.id.btn_now_playing)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btn_playlist)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btn_collection)).setOnClickListener(this);
 
         this.setTitle(getString(R.string.popular_name));
     }
@@ -118,23 +121,22 @@ public class MainActivity extends AppCompatActivity
         } else if (view.getId() == settingsImg.getId()) {
             Intent intent = new Intent(this, SettingsActivity.class);
             startActivity(intent);
-        } else {
-            switch (view.getId()) {
-                default:
-                    break;
-                case R.id.btn_now_playing:
-                    Intent intentNP = new Intent(this, NowPlayingActivity.class);
-                    startActivity(intentNP);
-                    break;
-                case R.id.btn_playlist:
-                    Intent intentP = new Intent(this, PlaylistActivity.class);
-                    startActivity(intentP);
-                    break;
-                case R.id.btn_collection:
-                    Intent intentC = new Intent(this, CollectionActivity.class);
-                    startActivity(intentC);
-                    break;
-            }
+        }
+        switch (view.getId()) {
+            default:
+                break;
+            case R.id.btn_now_playing:
+                Intent intentNP = new Intent(this, NowPlayingActivity.class);
+                startActivity(intentNP);
+                break;
+            case R.id.btn_playlist:
+                Intent intentP = new Intent(this, PlaylistActivity.class);
+                startActivity(intentP);
+                break;
+            case R.id.btn_collection:
+                Intent intentC = new Intent(this, CollectionActivity.class);
+                startActivity(intentC);
+                break;
         }
 
     }

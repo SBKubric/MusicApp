@@ -23,7 +23,14 @@
     <string name="btn_now_playing">Now Playing</string>
     <string name="btn_playlist">Playlist</string>
     <string name="btn_collection">Collection</string>
-    <string name="collection_description">This activity\'s content depends on the metadata transferred by the parent activity. It usually contains list of particular playlists.</string>
-    <string name="playlist_description">This activity contains the album picture and list of tracks located in the playlist (the album).</string>
+    <string name="collection_description">This activity\'s content depends on the metadata transferred by the parent activity. It usually contains list of particular playlists. The song which is playing now is displayed in the fragment.</string>
+    <string name="playlist_description">This activity\'s content depends on the metadata transferred by the parent activity. It usually shows the album picture and list of tracks located in the playlist (the album). The song which is playing now is displayed in the fragment at the bottom.</string>
     <string name="now_playing_description">This activity show to user label of the album, the song\'s info and controls</string>
+    <string name="popular_description">This activity contains the most popular songs, collections and artists among the user's friends. The song which is playing now is displayed in the fragment at the bottom.</string>
+    <string name="btn_sign_in">Sign In</string>
+    <string name="toast_sign_in">Server is not available right now :(</string>
+    <string name="search_description">This activity contains all audio resources that match the user\'s request. Need to attach the json reader and to build the server with API.</string>
+    <string name="sign_in_description">This activity shows the received form from the server. By filling this form user is able to log in and download and listen music offline, or listen to music which isn\'t available without registration.</string>
+    <string name="settings_description">This activity allows user to configure settings of the app such as:\\n- the network mode\\n- the equlizer settings\\n- the import of playlists</string>
+    <string name="btn_mode">Network mode</string>
 </resources>

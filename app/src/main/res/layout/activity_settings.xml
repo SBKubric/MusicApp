@@ -13,24 +13,6 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/collection_description" />
-
-    <Button
-        android:id="@+id/btn_now_playing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_now_playing" />
-
-    <Button
-        android:id="@+id/btn_playlist"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_playlist" />
-
-    <Button
-        android:id="@+id/btn_collection"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btn_collection" />
+        android:text="@string/settings_description" />
 
 </LinearLayout>
