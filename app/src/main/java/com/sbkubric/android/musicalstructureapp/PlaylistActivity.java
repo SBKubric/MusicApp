@@ -17,6 +17,7 @@ public class PlaylistActivity extends AppCompatActivity implements View.OnClickL
         ((Button) findViewById(R.id.btn_now_playing)).setOnClickListener(this);
         ((Button) findViewById(R.id.btn_playlist)).setOnClickListener(this);
         ((Button) findViewById(R.id.btn_collection)).setOnClickListener(this);
+        ((Button) findViewById(R.id.btn_search)).setOnClickListener(this);
     }
 
     @Override
@@ -44,6 +45,10 @@ public class PlaylistActivity extends AppCompatActivity implements View.OnClickL
             case R.id.btn_collection:
                 Intent intentC = new Intent(this, CollectionActivity.class);
                 startActivity(intentC);
+                break;
+            case R.id.btn_search:
+                Intent intentS = new Intent(this, SearchActivity.class);
+                startActivity(intentS);
                 break;
         }
     }
