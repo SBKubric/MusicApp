@@ -19,5 +19,5 @@
     <string name="btn_playlist">Playlist</string>
     <string name="btn_collection">Collection</string>
     <string name="btn_sign_in">Sign In</string>
-    <string name="toast_sign_in">Server is not availiable now :(</string>
+    <string name="toast_sign_in">Server is not available now :(</string>
 </resources>
